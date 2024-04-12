@@ -24,7 +24,7 @@ body {
   }
   
   .nav-1 li a:hover {
-    color: rgb(252, 158, 17);
+    color: rgb(252, 158, 17) !important;
   }
   
   .nav-1 li:not(:first-child)::before {
@@ -37,20 +37,26 @@ body {
   }
   .nav1-container{
     height: 30px;
-    margin-left: 6%;
+    margin-left: 3%;
     margin-right: 5%;
   }
   nav-2-items{
     align-items: center;
   }
   .nav2-container{
-    height: 30px;
-    margin-left: 4%;
-    margin-right: 3%;
+    height: 10px;
+    margin-right: 3%;  
+  }
+  .navbar .nav-link {
+    color: black; /* Set the default color to black */
+  }
+
+  .nav-item a:hover{
+    color:  rgb(252, 158, 17) !important;
   }
   .nav-item{
     align-items: center;
-    line-height: 44px;
+    line-height: 90px;
     display: block;
     text-align: center;
     text-decoration: none;
@@ -82,20 +88,6 @@ body {
   * {
     box-sizing: border-box
 }
-/* .slide {
-    position: absolute;
-    margin: auto;
-    width: auto;
-    margin-top: 2%;
-    height: 20%;
-  }
-  img {
-    width: 100%
-  }
-  .fade {
-    animation-name: fade;
-    animation-duration: 2s;
-  } */
 
   .imageslideshow {
     position: relative;
@@ -127,7 +119,7 @@ body {
       opacity: 1;
     }
     100% {
-      opacity: 0;
+      opacity: 1;
     }
   }
   
@@ -136,11 +128,32 @@ body {
     height: 100%;
     object-fit: cover; /* Ensure image covers the entire container */
   }
-/*   
-  @keyframes fade {
-    from {opacity: .5}
-    to {opacity: 1}
-  } */
+/* left and right arrow styles */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  cursor: pointer;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+.image-col{
+  width: 660px !important;
+  height: 660px;
+}
+
 
 
   

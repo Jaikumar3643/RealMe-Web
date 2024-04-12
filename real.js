@@ -27,4 +27,17 @@ function showItems(menuId) {
    images[index-1].style.display = "block";
    setTimeout(displayImages, 2000); 
  }
+
+ function plusSlides(n) {
+  showSlides(index += n);
+}
+function showSlides(n) {
+  const images = document.getElementsByClassName("image");
+  if (n > images.length) {index = 1}    
+  if (n < 1) {index = images.length}
+  for (let i = 0; i < images.length; i++) {
+      images[i].style.display = "none";  
+  }
+  images[index-1].style.display = "block";  
+}
   
