@@ -39,16 +39,23 @@ body {
     height: 30px;
     margin-left: 3%;
     margin-right: 5%;
+    z-index: 1000;
   }
   nav-2-items{
     align-items: center;
   }
   .nav2-container{
-    height: 10px;
-    margin-right: 3%;  
+    height: 20px;
+  }
+  .nav-2{
+    background-color:white !important;  
+    top: 20px;
   }
   .navbar .nav-link {
     color: black; /* Set the default color to black */
+  }
+  .navbar{
+    width: 100%;
   }
 
   .nav-item a:hover{
@@ -56,7 +63,7 @@ body {
   }
   .nav-item{
     align-items: center;
-    line-height: 90px;
+    line-height: 40px;
     display: block;
     text-align: center;
     text-decoration: none;
