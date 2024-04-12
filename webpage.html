@@ -9,7 +9,10 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="main">
@@ -38,7 +41,7 @@
         </nav>
       </div>
       <div class="nav2-container">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg fixed-top">
           <div class="container-fluid col-12">
             <div class="col-2">
               <a class="navbar-brand" href="#">
@@ -54,7 +57,13 @@
             <div class="col-6">
               <ul class="navbar-nav justify-content-center">
                 <li class="nav-item">
-                  <a href="#" class=" nav-link active bar-item" onmouseover="showItems('menu1')" onmouseout="hideItems('menu1')">Home</a>
+                  <a
+                    href="#"
+                    class="nav-link active bar-item"
+                    onmouseover="showItems('menu1')"
+                    onmouseout="hideItems('menu1')"
+                    >Home</a
+                  >
                   <!-- <a class="nav-link active bar-item" href="#" onmouseover="showItems('menu1')" onmouseout="hideItems('menu1')>New Launch</a> -->
                 </li>
                 <li class="nav-item">
@@ -79,44 +88,52 @@
             </div>
             <div class="col-4">
               <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <span class="btn btn-outline fa fa-search w-10 h-10" type="submit"></span>
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <span
+                  class="btn btn-outline fa fa-search w-10 h-10"
+                  type="submit"
+                ></span>
               </form>
             </div>
-           
           </div>
         </nav>
       </div>
       <div class="imageslideshow">
         <div class="slide">
           <div class="image fade">
-            <img src="./images/realmeimage2.jpg"/>
+            <img src="./images/realmeimage2.jpg" />
           </div>
           <div class="image fade">
-            <img src="./images/realmep15g.jpg"/>
+            <img src="./images/realmep15g.jpg" />
           </div>
           <div class="image fade">
-            <img src="./images/narzo70.jpg"/>
+            <img src="./images/narzo70.jpg" />
           </div>
         </div>
+        <!-- Left and right arrows -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-      <div class="content">
-        <p>hello</p>
-        <p>hello</p>
-        <p>hello</p>
-        <p>hello</p>
-        <p>hello</p>
-        <p>hello</p>
-        <p>hello</p>
-        <p>hello</p>
-        <p>hello</p>
-        <p>hello</p>
-        <p>hello</p>
-        <p>hello</p>
-        <p>hello</p>
-        <p>hello</p>
-        <p>hello</p>
-
+      <div class="image-box">
+        <div class="container text-center">
+          <div class="row row-cols-6 image-box-items">
+            <div class="col"> 
+              <img src="./images/icon1jpg.jpg" height="150px" width="150px">
+                <p>Daily Lotter</p>
+            </div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            
+          </div>
+        </div>
       </div>
     </div>
 
