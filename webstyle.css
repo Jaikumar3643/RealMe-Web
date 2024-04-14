@@ -1,142 +1,152 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family:SF Pro SC, SF Pro Display, PingFang SC, Helvetica Neue, Helvetica, "Segoe UI", SegoeUI, Arial, sans-serif;
-  }
-  /* nav1-container styles*/
-  .nav-1 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-1 li {
-    display: inline;
-  }
-  .nav-1 li a {
-    /* display: inline-block; */
-    color: #666;
-    text-align: center;
-    text-decoration: none;
-    height: 40px;
-    font-size: 12px;
-
-  }
-  
-  .nav-1 li a:hover {
-    color: rgb(252, 158, 17) !important;
-  }
-  
-  .nav-1 li:not(:first-child)::before {
-    content: "|";
-    color: #666;
-    margin-right: 5px; 
-  }
-  .nav-box{
-    margin-left: 10px;
-  }
-  .nav1-container{
-    height: 30px;
-    margin-left: 3%;
-    margin-right: 5%;
-    z-index: 1000;
-  }
-  nav-2-items{
-    align-items: center;
-  }
-  .nav2-container{
-    height: 20px;
-  }
-  .nav-2{
-    background-color:white !important;  
-    top: 20px;
-  }
-  .navbar .nav-link {
-    color: black; /* Set the default color to black */
-  }
-  .navbar{
-    width: 100%;
-  }
-
-  .nav-item a:hover{
-    color:  rgb(252, 158, 17) !important;
-  }
-  .nav-item{
-    align-items: center;
-    line-height: 40px;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-  }
-  .submenu {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .submenu a {
-    color: black;
-    padding: 12px 16px;
-    width: 100%;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .submenu a:hover {
-    background-color: #ddd;
-  }
-  
-  .bar-item:hover + .submenu {
-    display: block;
-  }
-  * {
-    box-sizing: border-box
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-family: SF Pro SC, SF Pro Display, PingFang SC, Helvetica Neue, Helvetica,
+    "Segoe UI", SegoeUI, Arial, sans-serif;
+}
+/* nav1-container styles*/
+.nav-1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-  .imageslideshow {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .slide {
-    display: flex;
-    width: 100%;  
-    height: 100%;
-    transition: transform 0.5s ease;
-    margin-top: 4%;
+.nav-1 li {
+  display: inline;
+}
+.nav-1 li a {
+  /* display: inline-block; */
+  color: #666;
+  text-align: center;
+  text-decoration: none;
+  height: 40px;
+  font-size: 12px;
+}
 
+.nav-1 li a:hover {
+  color: rgb(252, 158, 17) !important;
+}
+
+.nav-1 li:not(:first-child)::before {
+  content: "|";
+  color: #666;
+  margin-right: 5px;
+}
+.nav-box {
+  margin-left: 10px;
+}
+.nav1-container {
+  height: 30px;
+  margin-left: 3%;
+  margin-right: 5%;
+  z-index: 1000;
+}
+nav-2-items {
+  align-items: center;
+}
+.nav2-container {
+  height: 20px;
+}
+.nav-2 {
+  background-color: white !important;
+  top: 20px;
+}
+.nav-2.sticky {
+  top: auto;
+}
+.new-launch {
+  color: chocolate !important;
+}
+.navbar .nav-link {
+  color: black; /* Set the default color to black */
+}
+.navbar {
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.nav-item a:hover {
+  color: rgb(252, 158, 17) !important;
+}
+.nav-item {
+  align-items: center;
+  line-height: 40px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.submenu a {
+  color: black;
+  padding: 12px 16px;
+  width: 100%;
+  text-decoration: none;
+  display: block;
+}
+
+.submenu a:hover {
+  background-color: #ddd;
+}
+
+.bar-item:hover + .submenu {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
+
+.imageslideshow {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  margin-top: 4%;
+}
+
+.image {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.fade {
+  animation: fadeEffect 5s infinite alternate; /* Example fade animation */
+}
+
+@keyframes fadeEffect {
+  0% {
+    opacity: 1;
   }
-  
-  .image {
-    flex: 1;
-    width: 100%;
-    height: 100%;
+  100% {
+    opacity: 1;
   }
-  
-  .fade {
-    animation: fadeEffect 5s infinite alternate; /* Example fade animation */
-  }
-  
-  @keyframes fadeEffect {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  .fade img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure image covers the entire container */
-  }
+}
+
+.fade img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure image covers the entire container */
+}
 /* left and right arrow styles */
-.prev, .next {
+.prev,
+.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -156,21 +166,85 @@ body {
 .next {
   right: 0;
 }
-.image-col{
+.image-box-items {
+  cursor: pointer;
+}
+.image-col {
   width: 660px !important;
   height: 660px;
 }
-.bestdealer .image-item{
-  border-radius: 5%;
+.image-item {
+  border-radius: 4%;
   margin-bottom: 20px;
   margin-left: 0;
-  
+  display: block;
+  height: auto;
+  transition: transform 0.3s ease;
 }
-.itemstyle{
+.itemstyle {
   align-items: center;
-
 }
-
-
-  
-  
+.image-item:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+.range {
+  align-items: center;
+  padding: 10px;
+}
+.about {
+  border-radius: 3%;
+}
+.feedback .image-item {
+  margin-top: 20px;
+}
+.makeIt .image-item {
+  top: 4px;
+  /* perspective: 50px; */
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+/*second navbar hover categories card*/
+.catogiriesCard {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  padding-top: 0.3vw;
+  width: 100%;
+  transform: translateY(-3em);
+  z-index: 0;
+  transition: all 0.3s ease 0s, visibility 0s linear 0.3s,
+    z-index 0s linear 0.1s;
+  background-color: #fff;
+  margin-top: 250px;
+  left: 0;
+}
+.typeNone {
+  list-style-type: none;
+  cursor: pointer;
+}
+.align {
+  text-align: center;
+}
+.CImageStyle {
+  width: 140px;
+  aspect-ratio: auto 140 / 140;
+  height: 140px;
+}
+.CCostStyle {
+  color: #ff6700;
+  font-weight: 600;
+}
+.footer {
+  font-size: 12px;
+}
+.fHeader {
+  font-size: 12px;
+  line-height: 40px;
+  font-weight: bold;
+}
+hr.solid {
+  width: 100%;
+  border-top: 1px solid gray;
+}

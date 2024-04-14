@@ -14,27 +14,27 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-  <body>
+  <body id="scrollable-content">
     <div class="main">
       <div class="nav1-container">
         <nav>
           <div class="row cols-12 nav-box">
             <div class="col-4">
               <ul class="navbar nav-1">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Brand</a></li>
+                <li><a href="#">App</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">5G</a></li>
+                <li><a href="#">Portrait Master Academy</a></li>
               </ul>
             </div>
             <div class="col-6"></div>
             <div class="col-2 right-nav-1">
               <ul class="navbar nav-1">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">My Order</a></li>
+                <li><a href="#">Cart</a></li>
               </ul>
             </div>
           </div>
@@ -51,20 +51,19 @@
                   width="80"
                   height="60"
                   class="d-inline-block align-text-top"
+                  onmouseover="cCardListHide()"
                 />
               </a>
             </div>
             <div class="col-6">
-              <ul class="navbar-nav justify-content-center">
+              <ul class="navbar-nav justify-content-center secondNav" id="secondNav">
                 <li class="nav-item">
                   <a
                     href="#"
-                    class="nav-link active bar-item"
-                    onmouseover="showItems('menu1')"
-                    onmouseout="hideItems('menu1')"
-                    >New Launch</a
+                    class="nav-link active bar-item new-launch"
+                    onmouseover="cCardListShowMiMobile()"
+                    ><img src="./images/new-launch.jpg" width="90px" height="40px"></img></a
                   >
-                  <!-- <a class="nav-link active bar-item" href="#" onmouseover="showItems('menu1')" onmouseout="hideItems('menu1')>New Launch</a> -->
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" href="#">realme Days</a>
@@ -80,13 +79,47 @@
                 </li>
               </ul>
             </div>
-            <div>
-              <div id="menu1" class="submenu">
-                <a href="#" class="w3-bar-item w3-button">Submenu 1</a>
-                <a href="#" class="w3-bar-item w3-button">Submenu 2</a>
+            <!--second navbar mouse hover cards-->
+            <div class="contrainer-fluid catogiriesCard" onmouseover="test()" id="cCardList">
+              <div class="row">
+                  <div class="col-3">
+                      <ul class="typeNone align">
+                         <li ><img id="item1src" class="CImageStyle" src="./images/newlaunch/1.jpg"/></li>
+                         <li id="item1Name" class="CCostTitle">₹999.999</li>
+                         <li id="item1Cost" class="CCostStyle">₹999.999</li>
+                         
+                     </ul>
+                  </div>
+                  <div class="col-3">
+                     <ul class="typeNone align">
+                         <li ><img id="item2src" class="CImageStyle" src="/images/newlaunch/2.jpg"/></li>
+                         <li id="item2Name" class="CCostTitle">₹999.999</li>
+                         <li id="item2Cost" class="CCostStyle">₹999.999</li>
+                         
+                     </ul>
+                  </div>
+                  <div class="col-3">
+                     <ul class="typeNone align">
+                         <li ><img id="item3src" class="CImageStyle" src="/images/newlaunch/3.jpg"/></li>
+                         <li id="item3Name" class="CCostTitle">₹999.999</li>
+                         <li id="item3Cost" class="CCostStyle">₹999.999</li>
+                         
+                     </ul>
+                  </div>
+                  <div class="col-3">
+                     <ul class="typeNone align">
+                         <li ><img id="item4src" class="CImageStyle" src="/images/newlaunch/4.jpg"/></li>
+                         <li id="item4Name" class="CCostTitle">₹999.999</li>
+                         <li id="item4Cost" class="CCostStyle">₹999.999</li>
+                         
+                     </ul>
+                  </div>
               </div>
+             </div>
+            <div>
+              
             </div>
-            <div class="col-4">
+            <div class="col-4" onmouseover="cCardListHide()">
               <form class="d-flex">
                 <input
                   class="form-control me-2"
@@ -103,10 +136,10 @@
           </div>
         </nav>
       </div>
-      <div class="imageslideshow">
+      <div class="imageslideshow" onmouseover="cCardListHide()">
         <div class="slide">
           <div class="image fade">
-            <img src="./images/realmeimage2.jpg" />
+            <img src="./images/realmeimage2.jpg"/>
           </div>
           <div class="image fade">
             <img src="./images/realmep15g.jpg" />
@@ -121,7 +154,7 @@
       </div>
       <div class="image-box">
         <div class="container">
-          <div class="row row-cols-8 image-box-items">
+          <div class="row row-cols-8 image-box-items text-center">
             <div class="col-sm">
               <img src="./images/icon1jpg.jpg" height="110px" width="110px" />
               <p>Daily Lotter</p>
@@ -159,20 +192,175 @@
       </div>
       <div class="bestdealer container text-center">
         <div class="title">
-          <h1><img class="itemstyle" src="./images/best.jp.webp" width="600px" height="100px"></h1>
+          <h1>
+            <img
+              class="itemstyle"
+              src="./images/best.jp.webp"
+              width="600px"
+              height="100px"
+            />
+          </h1>
         </div>
         <div class="row col-12">
           <div class="col-6">
-            <img class="image-item" src="./images/best1.jpg"  width="500px" height="680px">
+            <img
+              class="image-item"
+              src="./images/best1.jpg"
+              width="500px"
+              height="680px"
+            />
           </div>
           <div class="col-6">
-            <img class="image-item" src="./images/best2.jpg" width="500px" height="330px">
-            <img class="image-item" src="./images/best3.jpg" width="500px" height="330px">
+            <img
+              class="image-item"
+              src="./images/best2.jpg"
+              width="500px"
+              height="330px"
+            />
+            <img
+              class="image-item"
+              src="./images/best3.jpg"
+              width="500px"
+              height="330px"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="highlight container text-center">
+        <div class="title">
+          <img class="itemstyle" src="./images/highlights.jpg" width="1060px" />
+        </div>
+        <div class="row col-12">
+          <div class="col">
+            <img
+              class="image-item"
+              src="./images/realmedays.jpg"
+              width="1050px"
+              height="350px"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="feedback container text-center">
+        <div class="title">
+          <img class="image-item" src="./images/feedback.jpg" width="1060px" />
+        </div>
+      </div>
+      <div class="whyshop container text-center">
+        <div class="title">
+          <img
+            class="itemstyle"
+            src="./images/whyshop.jpg"
+            width="1060px"
+            height="50px"
+          />
+        </div>
+        <div class="col">
+          <img
+            class="image-item"
+            src="./images/realmecare.jpg"
+            width="1050px"
+            height="350px"
+          />
+          <img class="image-item" src="./images/fullrange.jpg" width="1060px" />
+        </div>
+      </div>
+      <div class="makeIt container">
+        <div class="title">
+          <img class="itemstyle" src="./images/make.jpg" width="1060px" />
+        </div>
+        <div class="row col-12">
+          <div class="col-3 image-item">
+            <img src="./images/about.jpg" width="300px" height="250px"/>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-8 image-item">
+            <img src="./images/service.jpg" width="700px" height="250px" style="border-top-right-radius: 4%;border-bottom-right-radius: 4%;"/>
           </div>
         </div>
       </div>
     </div>
-
+    <div class="footer" style="padding:2vw 2vw;margin-top: 5vw;">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-2">
+                  <ul class="typeNone">
+                      <li class="fHeader">Recommended</li>
+                      <li class="fData">realme P1 5G</li>
+                      <li class="fData">realme P1 Pro 5G</li>
+                      <li class="fData">realme 12x 5G</li>
+                      <li class="fData">NARZO 70 Pro 5G</li>
+                      <li class="fData">realme 12+ 5G</li>
+                      <li class="fData">realme 12 Pro+ 5G</li>
+                      <li class="fData">realme 12 Pro 5G</li>
+                      <li class="fData">realme narzo 60x 5G</li>
+                      <li class="fData">realme narzo N53</li>
+                      <li class="fData">realme C51</li>
+                  </ul>
+              </div>
+              <div class="col-2">
+                  <ul class="typeNone">
+                      <li class="fHeader">Support</li>
+                      <li class="fData">Mi 10i / Mi 10T Series</li>
+                      <li class="fData">Mi 11 Ultra / Mi 11X / Mi 11X Pro</li>
+                      <li class="fData">Redmi 8 / Redmi 9 / Redmi 9 Prime</li>
+                      <li class="fData">Redmi 9i / Redmi 9A</li>
+                      <li class="fData">Redmi Note 10 / Redmi Note 10 Pro / Redmi Note 10 Pro Max</li>
+                      <li class="fData">Redmi Note 9 Pro / Redmi Note 9  / Redmi Note 9 Pro Max</li>
+                  </ul>
+              </div>
+              
+  
+  
+              <div class="col-2">
+                  <ul class="typeNone">
+                      <li class="fHeader">About realme</li>
+                      <li class="fData">Mi Home</li>
+                      <li class="fData">Mi Authorized Stores</li>
+                  </ul>
+              </div>
+              <div class="col-3">
+                  <ul class="typeNone">
+                      <li class="fHeader">Contact realme</li>
+                      <li class="fData">Xiaomi</li>
+                      <li class="fData">Mediakit</li>
+                      <li class="fData">Culture/li>
+                      <li class="fData">User Agreement</li>
+                      <li class="fData">Privacy Policy</li>
+                      <li class="fData">Declarations</li>
+                      <li class="fData">Integrity & Compliance</li>
+                      <li class="fData">Smartphone Quality</li>
+                      <li class="fData">TV Quality</li>
+                      <li class="fData">Service Quality</li>
+                      <li class="fData">Environment</li>
+                      <li class="fData">Sitemap</li>
+                  </ul>
+              </div>
+              
+              <div class="col-3">
+                  <ul class="typeNone" style=" margin-top: 2vw;">
+                    <li>
+                      <button style="margin-top: 1vw; width: 15vw;" type="button" class="btn btn-outline-dark">CHAT SUPPORT</button>
+                  </li>
+                      <li class="fLst">9:00-21:00, MON-SUN
+                        </li>
+                      <li class="fLst">Including Holidays</li>
+                     
+                  </ul>
+                  
+              </div>
+          </div>
+          <div class="row">
+            India ( English / INR )
+              <hr class="solid">
+          </div>
+          <div class="row">
+              <div class="copyright">
+                © 2018-2024 realme. All Rights Reserved.      
+              </div>
+          </div>
+      </div>
+  </div>
     <script src="real.js"></script>
   </body>
 </html>
