@@ -37,20 +37,16 @@ body {
   margin-left: 10px;
 }
 .nav1-container {
-  height: 30px;
+  height: 25px;
   margin-left: 3%;
   margin-right: 5%;
-  z-index: 1000;
-}
-nav-2-items {
-  align-items: center;
 }
 .nav2-container {
-  height: 20px;
+  height: 15px;
 }
 .nav-2 {
   background-color: white !important;
-  top: 20px;
+  top: 21px;
 }
 .nav-2.sticky {
   top: auto;
